@@ -1,0 +1,339 @@
+/* css Variables.
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+
+:root {
+  --main-bg-color: rgb(36, 34, 34);
+  /*  --color: coral; */
+}
+
+html {
+  background-color: var(--main-bg-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar*/
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  padding: 15px;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: p22-stickley-pro-caption, serif;
+  font-weight: 300;
+  font-style: normal;
+  color: coral;
+}
+
+li a:hover {
+  background-color: rgb(250, 159, 2);
+}
+
+/* Rubrik */
+
+h1 a {
+  color: coral;
+  font-size: 50px;
+  font-family: p22-stickley-pro-caption, serif;
+  margin: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Horizontal ruler.
+Hittade en som passde, men den var åt fel håll, så jag stylade om den, så att hornen pekade uppåt. Utgick från denna nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB */
+
+hr.style {
+  border-bottom: 2px solid coral;
+  border-left: 2px;
+  border-right: 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 35px;
+  border-top: none;
+  border-radius: 30px;
+  width: 70%;
+  height: 205px;
+  width: 50%;
+  margin-top: -200px;
+  min-width: 300px;
+  max-width: 800px;
+}
+
+.underrubrik {
+  color: coral;
+  font-size: 20px;
+  font-family: p22-stickley-pro-caption, serif;
+  font-style: italic;
+  margin: 0px 0 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* main */
+
+.brödtext {
+  color: coral;
+  font-size: 20px;
+  font-family: p22-stickley-pro-caption, serif;
+  font-style: normal;
+  text-align: left;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 140px 0 0 60px;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 160px 0 0;
+}
+
+/* https://stackoverflow.com/questions/27686522/generating-ragged-edges-in-css */
+
+#django {
+  width: 200px;
+  height: auto;
+  border: 10px solid coral;
+  display: flex;
+  transform: rotate(18deg);
+  margin: 70px 0 0 150px;
+  border-radius: 10%;
+  clip-path: polygon(
+    3% 0,
+    7% 1%,
+    11% 0%,
+    16% 2%,
+    20% 0,
+    23% 2%,
+    28% 2%,
+    32% 1%,
+    35% 1%,
+    39% 3%,
+    41% 1%,
+    45% 0%,
+    47% 2%,
+    50% 2%,
+    53% 0,
+    58% 2%,
+    60% 2%,
+    63% 1%,
+    65% 0%,
+    67% 2%,
+    69% 2%,
+    73% 1%,
+    76% 1%,
+    79% 0,
+    82% 1%,
+    85% 0,
+    87% 1%,
+    89% 0,
+    92% 1%,
+    96% 0,
+    98% 3%,
+    99% 3%,
+    99% 6%,
+    100% 11%,
+    98% 15%,
+    100% 21%,
+    99% 28%,
+    100% 32%,
+    99% 35%,
+    99% 40%,
+    100% 43%,
+    99% 48%,
+    100% 53%,
+    100% 57%,
+    99% 60%,
+    100% 64%,
+    100% 68%,
+    99% 72%,
+    100% 75%,
+    100% 79%,
+    99% 83%,
+    100% 86%,
+    100% 90%,
+    99% 94%,
+    99% 98%,
+    95% 99%,
+    92% 99%,
+    89% 100%,
+    86% 99%,
+    83% 100%,
+    77% 99%,
+    72% 100%,
+    66% 98%,
+    62% 100%,
+    59% 99%,
+    54% 99%,
+    49% 100%,
+    46% 98%,
+    43% 100%,
+    40% 98%,
+    38% 100%,
+    35% 99%,
+    31% 100%,
+    28% 99%,
+    25% 99%,
+    22% 100%,
+    19% 99%,
+    16% 100%,
+    13% 99%,
+    10% 99%,
+    7% 100%,
+    4% 99%,
+    2% 97%,
+    1% 97%,
+    0% 94%,
+    1% 89%,
+    0% 84%,
+    1% 81%,
+    0 76%,
+    0 71%,
+    1% 66%,
+    0% 64%,
+    0% 61%,
+    0% 59%,
+    1% 54%,
+    0% 49%,
+    1% 45%,
+    0% 40%,
+    1% 37%,
+    0% 34%,
+    1% 29%,
+    0% 23%,
+    2% 20%,
+    1% 17%,
+    1% 13%,
+    0 10%,
+    1% 6%,
+    1% 3%
+  );
+}
+
+/* Välkommen */
+/* Rotera text: https://www.w3schools.com/cssref/css3_pr_transform.asp */
+
+h4 a {
+  color: coral;
+  font-size: 40px;
+  font-family: p22-stickley-pro-caption, serif;
+  font-style: italic;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+  letter-spacing: 2px;
+  transform: rotate(-10deg);
+  transform: skewY(-14deg);
+}
+
+h5 a {
+  color: coral;
+  font-size: 30px;
+  font-family: p22-stickley-pro-caption, serif;
+  font-style: normal;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0 430px;
+  text-transform: uppercase;
+  text-align: right;
+  /*   letter-spacing: 3px;
+ */
+  /*   transform: rotate(10deg);
+ */ /* transform: skewY(-14deg); */
+}
+
+h4 a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+/* audio {
+  display: flex;
+  justify-content: right;
+  margin: 0 100px 0 0;
+} */
+
+/* --------------------------------
+subpages
+-------------------------------- */
+.git-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bildgrid {
+  border: 1px solid coral;
+
+  background: radial-gradient(
+    circle,
+    rgba(48, 48, 48, 1) 0%,
+    rgb(146, 146, 144) 100%,
+    rgba(249, 247, 247, 1) 100%
+  );
+  width: 300px;
+  margin: 40px 0 0 0;
+  max-width: 300px;
+  max-height: auto;
+}
+
+.git-info p {
+  color: coral;
+  text-align: center;
+  font-family: p22-stickley-pro-caption, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 12px;
+  border: 1px solid coral;
+  /*   border-radius: 0.3em;
+ */
+  padding: 5px 0 5px 0;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 666px) {
+  .maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brödtext {
+    margin: 60px 0 0 180px;
+    font-size: 18px;
+  }
+
+  .image {
+    margin-top: -70px;
+    height: 50%;
+    width: auto;
+  }
+
+  h4 a {
+    /* margin: 40px 0 0 40px; */
+    font-size: 2rem;
+  }
+}
