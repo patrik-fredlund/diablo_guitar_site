@@ -32,11 +32,14 @@ nav {
 
 li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   font-family: p22-stickley-pro-caption, serif;
   font-weight: 300;
   font-style: normal;
   color: coral;
+  /*  border: 1px solid coral;
+  padding: 2px 25px 2px 25px;
+  border-radius: 10px; */
 }
 
 li a:hover {
@@ -55,10 +58,15 @@ h1 a {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  transition: transform 1s;
+}
+
+h1 a:hover {
+  transform: scale(1.5);
 }
 
 /* Horizontal ruler.
-Hittade en som passde, men den var åt fel håll, så jag stylade om den, så att hornen pekade uppåt. Utgick från denna nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB */
+Hittade en som passde, men den var åt fel håll, så jag stylade om den så att "hornen" pekade uppåt. Utgick från denna, nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB */
 
 hr.style {
   border-bottom: 2px solid coral;
@@ -275,28 +283,19 @@ h4 a {
   margin: 0 100px 0 0;
 } */
 
+/* -------------------------------------------------------------
+S U B P A G E S
+---------------------------------------------------------------*/
+
 /* --------------------------------
-subpages
+Guitars - page
 -------------------------------- */
-.git-container {
+
+.git-container1,
+.git-container2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.bildgrid {
-  border: 1px solid coral;
-
-  background: radial-gradient(
-    circle,
-    rgba(48, 48, 48, 1) 0%,
-    rgb(146, 146, 144) 100%,
-    rgba(249, 247, 247, 1) 100%
-  );
-  width: 300px;
-  margin: 40px 0 0 0;
-  max-width: 300px;
-  max-height: auto;
 }
 
 .git-info p {
@@ -312,8 +311,94 @@ subpages
   padding: 5px 0 5px 0;
 }
 
-/* Media queries */
+.git-info {
+  padding: 0 20px 0 20px;
+}
 
+.bildgrid {
+  border: 1px solid coral;
+  margin: 40px 0 0 0;
+  max-width: 300px;
+  max-height: auto;
+
+  background: radial-gradient(
+    circle,
+    rgba(48, 48, 48, 1) 0%,
+    rgb(146, 146, 144) 100%,
+    rgba(249, 247, 247, 1) 100%
+  );
+}
+
+/* ------------------------------------------------
+Contact-page
+https://www.youtube.com/watch?v=GMH3rNTN4IQ
+------------------------------------------------ */
+.contact-title {
+  margin-top: 100px;
+  color: coral;
+  transition: all 3s ease-in-out;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+  text-align: center;
+  font-family: p22-stickley-pro-caption, serif;
+}
+
+.contact-title h2 {
+  font-size: 16px;
+  text-align: center;
+  font-family: p22-stickley-pro-caption, serif;
+  font-weight: lighter;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 3s ease-in-out;
+}
+
+.form-control {
+  width: 400px;
+  background: transparent;
+  font-family: p22-stickley-pro-caption, serif;
+  color: coral;
+  border: none;
+  outline: none;
+  border-bottom: 1px dotted gray;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: coral;
+  border-color: transparent;
+  color: rgb(10, 11, 9);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 1rem;
+}
+
+form .submit:hover {
+  background-color: rgb(249, 167, 137);
+  cursor: pointer;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------------------------------------------
+Media queries
+-------------------------------------------------- */
 @media screen and (max-width: 666px) {
   .maincontainer {
     display: flex;
@@ -335,5 +420,9 @@ subpages
   h4 a {
     /* margin: 40px 0 0 40px; */
     font-size: 2rem;
+  }
+
+  .form-control {
+    width: 300px;
   }
 }
