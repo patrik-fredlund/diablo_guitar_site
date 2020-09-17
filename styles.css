@@ -1,13 +1,16 @@
+/* Global Styles */
+
 /* css Variables.
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
 :root {
   --main-bg-color: rgb(36, 34, 34);
-  /*  --color: coral; */
+  --main-fg-color: coral;
 }
 
 html {
   background-color: var(--main-bg-color);
+  font-family: p22-stickley-pro-caption, serif;
 }
 
 body {
@@ -15,7 +18,13 @@ body {
   padding: 0;
 }
 
-/* navbar*/
+/* -----------------------------------------------------------
+STARTSIDA
+--------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+navbar
+------------------------------------------------------------*/
 
 .navbar {
   display: flex;
@@ -33,11 +42,11 @@ nav {
 li a {
   text-decoration: none;
   font-size: 16px;
-  font-family: p22-stickley-pro-caption, serif;
   font-weight: 300;
   font-style: normal;
-  color: coral;
-  /*  border: 1px solid coral;
+  color: var(
+    --main-fg-color
+  ); /*  border: 1px solid coral;
   padding: 2px 25px 2px 25px;
   border-radius: 10px; */
 }
@@ -46,13 +55,14 @@ li a:hover {
   background-color: rgb(250, 159, 2);
 }
 
-/* Rubrik */
+/*-------------------------------------------------------------------------
+Rubrik
+---------------------------------------------------------------------------*/
 
 h1 a {
-  color: coral;
+  color: var(--main-fg-color);
   font-size: 50px;
-  font-family: p22-stickley-pro-caption, serif;
-  margin: 30px;
+  /margin: 30px;
   margin-bottom: 10px;
   text-align: center;
   display: flex;
@@ -65,8 +75,10 @@ h1 a:hover {
   transform: scale(1.5);
 }
 
-/* Horizontal ruler.
-Hittade en som passde, men den var åt fel håll, så jag stylade om den så att "hornen" pekade uppåt. Utgick från denna, nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB */
+/*-------------------------------------------------------------------------
+ Horizontal ruler.
+Hittade en som passde, men den var åt fel håll, så jag stylade om den så att "hornen" pekade uppåt. Utgick från denna, nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB 
+------------------------------------------------------------------------*/
 
 hr.style {
   border-bottom: 2px solid coral;
@@ -85,9 +97,8 @@ hr.style {
 }
 
 .underrubrik {
-  color: coral;
+  color: var(--main-fg-color);
   font-size: 20px;
-  font-family: p22-stickley-pro-caption, serif;
   font-style: italic;
   margin: 0px 0 30px 0;
   text-align: center;
@@ -95,12 +106,13 @@ hr.style {
   justify-content: center;
 }
 
-/* main */
+/*------------------------------------
+ main 
+ ------------------------------------*/
 
 .brödtext {
-  color: coral;
+  color: var(--main-fg-color);
   font-size: 20px;
-  font-family: p22-stickley-pro-caption, serif;
   font-style: normal;
   text-align: left;
   max-width: 400px;
@@ -240,9 +252,8 @@ hr.style {
 /* Rotera text: https://www.w3schools.com/cssref/css3_pr_transform.asp */
 
 h4 a {
-  color: coral;
+  color: var(--main-fg-color);
   font-size: 40px;
-  font-family: p22-stickley-pro-caption, serif;
   font-style: italic;
   text-decoration: none;
   display: flex;
@@ -254,9 +265,8 @@ h4 a {
 }
 
 h5 a {
-  color: coral;
+  color: var(--main-fg-color);
   font-size: 30px;
-  font-family: p22-stickley-pro-caption, serif;
   font-style: normal;
   text-decoration: none;
   display: flex;
@@ -264,10 +274,6 @@ h5 a {
   margin: 30px 0 0 430px;
   text-transform: uppercase;
   text-align: right;
-  /*   letter-spacing: 3px;
- */
-  /*   transform: rotate(10deg);
- */ /* transform: skewY(-14deg); */
 }
 
 h4 a {
@@ -276,12 +282,6 @@ h4 a {
   justify-content: center;
   text-align: center;
 }
-
-/* audio {
-  display: flex;
-  justify-content: right;
-  margin: 0 100px 0 0;
-} */
 
 /* -------------------------------------------------------------
 S U B P A G E S
@@ -301,7 +301,6 @@ Guitars - page
 .git-info p {
   color: coral;
   text-align: center;
-  font-family: p22-stickley-pro-caption, serif;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-size: 12px;
@@ -329,14 +328,33 @@ Guitars - page
   );
 }
 
-/* ------------------------------------------------
+/* ---------------------------------------------------
 Contact-page
 https://www.youtube.com/watch?v=GMH3rNTN4IQ
+
+Sen efter vi snackade om transition så hittade jag denna länk som tog mig i rätt riktining: https://www.codegrepper.com/code-examples/php/keyframes+opacity+css
+
+Även denna, men den var infinite, dvs den upprepade sig i all oändlighet.
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes
+
+Så denna post löste problemet så att formen "fastnade" och inte upprepade sig:
+https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation
 ------------------------------------------------ */
 .contact-title {
-  margin-top: 100px;
-  color: coral;
-  transition: all 3s ease-in-out;
+  margin-top: 50px;
+  color: var(--main-fg-color);
+
+  position: relative;
+  animation: mymove 3s forwards;
+}
+
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 30px;
+  }
 }
 
 .contact-title h1 {
@@ -344,6 +362,7 @@ https://www.youtube.com/watch?v=GMH3rNTN4IQ
   line-height: 10px;
   text-align: center;
   font-family: p22-stickley-pro-caption, serif;
+  animation: monFrame2 5s forwards;
 }
 
 .contact-title h2 {
@@ -351,23 +370,33 @@ https://www.youtube.com/watch?v=GMH3rNTN4IQ
   text-align: center;
   font-family: p22-stickley-pro-caption, serif;
   font-weight: lighter;
+  animation: monFrame2 5s forwards;
+}
+
+@keyframes monFrame2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 3;
+  }
 }
 
 form {
-  margin-top: 50px;
-  transition: all 3s ease-in-out;
+  margin-top: 70px;
 }
 
 .form-control {
   width: 400px;
   background: transparent;
   font-family: p22-stickley-pro-caption, serif;
-  color: coral;
   border: none;
   outline: none;
   border-bottom: 1px dotted gray;
   font-size: 18px;
   margin-bottom: 16px;
+  color: var(--main-fg-color);
 }
 
 input {
@@ -394,8 +423,29 @@ form .submit:hover {
 .contact-form {
   display: flex;
   justify-content: center;
+  position: relative;
+  animation: mymove 3s forwards;
+  animation: monFrame 5s forwards;
 }
 
+@keyframes mymove {
+  from {
+    top: 5px;
+  }
+  to {
+    top: 50px;
+  }
+}
+
+@keyframes monFrame {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 2;
+  }
+}
 /* ------------------------------------------------
 Media queries
 -------------------------------------------------- */
