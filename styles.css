@@ -33,6 +33,7 @@ navbar
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style-type: none;
 }
 
 nav {
@@ -320,56 +321,18 @@ S U B P A G E S
 Guitars - page
 -------------------------------- */
 
-/* .git-container1,
-.git-container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.git-info p {
-  color: coral;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-size: 12px;
-  border: 1px solid coral;
-  border-radius: 0.3em;
-
-  padding: 5px 0 5px 0;
-}
-
-.git-info {
-  padding: 0 20px 0 20px;
-}
-
-.bildgrid {
-  border: 1px solid coral;
-  margin: 40px 0 0 0;
-
-  max-width: 300px;
-  max-height: auto;
-  background: radial-gradient(
-    circle,
-    rgba(48, 48, 48, 1) 0%,
-    rgb(146, 146, 144) 100%,
-    rgba(249, 247, 247, 1) 100%
-  );
-} */
-
 .flex-container1,
 .flex-container2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
 
   /*   border: 1px solid white;
  */
 }
 
 .flex-container1 {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .flex-box img {
