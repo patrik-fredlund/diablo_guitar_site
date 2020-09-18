@@ -1,4 +1,6 @@
-/* Global Styles */
+/* -------------------------------------------------
+Global Styles 
+----------------------------------------------------*/
 
 /* css Variables.
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
@@ -11,7 +13,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 html {
   background-color: var(--main-bg-color);
   font-family: p22-stickley-pro-caption, serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
+
+/* Den här artkeln: https://aykevl.nl/2014/09/fix-jumping-scrollbar
+löste problemet med att Guitar-sidan hoppade en anning horisontallt när man
+klickade in på den. Det visade sig att problemet var scrollbaren som dök upp på den sidan.
+taggarna: width och overflow-x i html-taggen löste det.
+  */
 
 body {
   margin: 0;
@@ -38,6 +48,7 @@ navbar
 
 nav {
   padding: 15px;
+  flex-basis: 50%;
 }
 
 li a {
@@ -45,11 +56,9 @@ li a {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  color: var(
-    --main-fg-color
-  ); /*  border: 1px solid coral;
-  padding: 2px 25px 2px 25px;
-  border-radius: 10px; */
+  color: var(--main-fg-color);
+  display: flex;
+  flex-basis: 30%;
 }
 
 li a:hover {
@@ -326,9 +335,6 @@ Guitars - page
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
-  /*   border: 1px solid white;
- */
 }
 
 .flex-container1 {
@@ -339,6 +345,7 @@ Guitars - page
   border: 2px solid coral;
   border-radius: 6px;
   width: 300px;
+  height: auto;
   margin: 20px;
   margin-bottom: -5px;
   flex-basis: 60%;
