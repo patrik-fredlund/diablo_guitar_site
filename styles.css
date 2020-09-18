@@ -320,7 +320,7 @@ S U B P A G E S
 Guitars - page
 -------------------------------- */
 
-.git-container1,
+/* .git-container1,
 .git-container2 {
   display: flex;
   flex-wrap: wrap;
@@ -334,8 +334,8 @@ Guitars - page
   letter-spacing: 0.5em;
   font-size: 12px;
   border: 1px solid coral;
-  /*   border-radius: 0.3em;
- */
+  border-radius: 0.3em;
+
   padding: 5px 0 5px 0;
 }
 
@@ -346,16 +346,90 @@ Guitars - page
 .bildgrid {
   border: 1px solid coral;
   margin: 40px 0 0 0;
+
   max-width: 300px;
   max-height: auto;
-
   background: radial-gradient(
     circle,
     rgba(48, 48, 48, 1) 0%,
     rgb(146, 146, 144) 100%,
     rgba(249, 247, 247, 1) 100%
   );
+} */
+
+.flex-container1,
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  /*   border: 1px solid white;
+ */
 }
+
+.flex-container1 {
+  margin-top: 80px;
+}
+
+.flex-box img {
+  border: 2px solid coral;
+  border-radius: 6px;
+  width: 300px;
+  margin: 20px;
+  margin-bottom: -5px;
+  flex-basis: 60%;
+  background: radial-gradient(
+    circle,
+    rgba(249, 247, 247, 1) 0%,
+    rgba(210, 210, 209, 1) 10%,
+    rgba(36, 34, 34, 1) 56%
+  );
+}
+
+.name-tag {
+  border: 2px solid coral;
+  border-radius: 6px;
+  font-family: p22-stickley-pro-display, serif;
+  color: wheat;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 10px 10px 10px 10px;
+  margin: 20px;
+  width: 280px;
+}
+
+.info-text {
+  border: 2px solid coral;
+  border-radius: 6px;
+  color: wheat;
+  font-size: 15px;
+  text-align: center;
+
+  padding: 15px 15px 20px 15px;
+  margin: 20px;
+  width: 270px;
+  margin-top: 20px;
+  font-weight: 300px;
+  font-style: italic;
+  line-height: 25px;
+}
+
+/* .flex-box img {
+  border: 1px solid coral;
+  width: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(249, 247, 247, 1) 0%,
+    rgba(210, 210, 209, 1) 10%,
+    rgba(36, 34, 34, 1) 56%
+  );
+} */
 
 /* ---------------------------------------------------
 Contact-page
