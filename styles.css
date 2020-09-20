@@ -342,11 +342,12 @@ Guitars - page
 }
 
 .flex-box img {
-  border: 2px solid coral;
+  border: 1px solid coral;
   border-radius: 6px;
   width: 300px;
   height: auto;
   margin: 20px;
+  padding-top: 15px;
   margin-bottom: -5px;
   flex-basis: 60%;
   background: radial-gradient(
@@ -358,7 +359,7 @@ Guitars - page
 }
 
 .name-tag {
-  border: 2px solid coral;
+  border: 1px solid coral;
   border-radius: 6px;
   font-family: p22-stickley-pro-display, serif;
   color: wheat;
@@ -374,7 +375,7 @@ Guitars - page
 }
 
 .info-text {
-  border: 2px solid coral;
+  border: 1px solid coral;
   border-radius: 6px;
   color: wheat;
   font-size: 15px;
@@ -389,17 +390,94 @@ Guitars - page
   line-height: 25px;
 }
 
-/* .flex-box img {
-  border: 1px solid coral;
-  width: 50%;
+/* ---------------------------------------------------
+About-page
+------------------------------------------------ */
 
-  background: radial-gradient(
-    circle,
-    rgba(249, 247, 247, 1) 0%,
-    rgba(210, 210, 209, 1) 10%,
-    rgba(36, 34, 34, 1) 56%
-  );
-} */
+.maincontainer_about_top {
+  /*   border: 1px solid white;
+ */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0 0 0;
+}
+
+.maincontainer_about_bottom {
+  /*   border: 1px solid white;
+ */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0 0 0;
+}
+
+#django_about {
+  border: 1px solid coral;
+  border-radius: 5px;
+}
+
+.maincontainer_about_top p {
+  color: var(--main-fg-color);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.maincontainer_about_top h4 {
+  /*   border: 1px solid white;
+ */
+  color: var(--main-fg-color);
+  font-size: 18px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+
+  text-align: left;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.maincontainer_about_bottom p {
+  /*   border: 1px solid white;
+ */
+  color: var(--main-fg-color);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.maincontainer_about_bottom h4 {
+  color: var(--main-fg-color);
+  font-size: 18px;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: left;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.text-box-top {
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+.text-box-bottom {
+  margin-right: 30px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 666px) {
+  .maincontainer_about_bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 
 /* ---------------------------------------------------
 Contact-page
