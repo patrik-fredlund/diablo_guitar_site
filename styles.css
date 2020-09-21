@@ -437,8 +437,8 @@ About-page
 .django_about {
   border: 10px solid coral;
   border-radius: 5px;
-  width: 300px;
-  height: auto;
+  height: 300px;
+  width: auto;
   clip-path: polygon(
     3% 0,
     7% 1%,
