@@ -86,7 +86,7 @@ h1 a:hover {
 }
 
 /*-------------------------------------------------------------------------
- Horizontal ruler.
+Horizontal ruler.
 Hittade en som passde, men den var åt fel håll, så jag stylade om den så att "hornen" pekade uppåt. Utgick från denna, nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB 
 ------------------------------------------------------------------------*/
 
@@ -150,7 +150,9 @@ hr.style {
   }
 }
 
-/* https://stackoverflow.com/questions/27686522/generating-ragged-edges-in-css */
+/*
+Ville ha jagged edges på img och border. #django
+Hittade en bra länk här: https://stackoverflow.com/a/47085434*/
 
 #django {
   width: 200px;
@@ -432,7 +434,7 @@ About-page
   line-height: 30px;
 }
 
-#django_about {
+.django_about {
   border: 10px solid coral;
   border-radius: 5px;
   width: 300px;
