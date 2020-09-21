@@ -324,6 +324,20 @@ h4 a {
   text-align: center;
 }
 
+footer {
+  color: var(--main-fg-color);
+  font-size: 16px;
+  min-height: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* footer p {
+  color: yellow;
+} */
 /* -------------------------------------------------------------
 S U B P A G E S
 ---------------------------------------------------------------*/
