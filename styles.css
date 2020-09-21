@@ -427,7 +427,7 @@ About-page
 }
 
 .text-box-top {
-  margin-left: 30px;
+  margin-left: 60px;
   margin-top: 40px;
   line-height: 30px;
 }
@@ -581,7 +581,7 @@ About-page
 }
 
 .text-box-bottom {
-  margin-right: 30px;
+  margin-right: 60px;
   line-height: 30px;
 }
 
@@ -590,8 +590,16 @@ About-page
     flex-direction: column-reverse;
     align-items: center;
   }
-}
 
+  .text-box-bottom {
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .text-box-top {
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+}
 /* ---------------------------------------------------
 Contact-page
 https://www.youtube.com/watch?v=GMH3rNTN4IQ
