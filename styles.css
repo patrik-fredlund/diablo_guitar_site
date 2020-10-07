@@ -326,13 +326,19 @@ h4 a {
 
 footer {
   color: var(--main-fg-color);
-  font-size: 16px;
+  font-size: 14px;
   min-height: auto;
   margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 666px) {
+  footer {
+    font-size: 12px;
+  }
 }
 
 /* footer p {
@@ -443,9 +449,14 @@ About-page
 }
 
 .text-box-top {
+  border: 1px solid white;
+
   margin-left: 60px;
+  margin-right: 40px;
   margin-top: 40px;
   line-height: 30px;
+  flex-basis: 400px;
+  flex-shrink: 2;
 }
 
 .django_about {
@@ -565,6 +576,12 @@ About-page
   );
 }
 
+@media screen and (max-width: 666px) {
+  .django_about {
+    height: 200px;
+  }
+}
+
 .maincontainer_about_bottom {
   /*   border: 1px solid white;
  */
@@ -572,6 +589,13 @@ About-page
   justify-content: center;
   flex-wrap: wrap;
   margin: 80px 0 0 0;
+}
+
+@media screen and (max-width: 666px) {
+  .maincontainer_about_bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .maincontainer_about_bottom p {
@@ -586,6 +610,8 @@ About-page
 }
 
 .maincontainer_about_bottom h4 {
+  /*   border: 1px solid white;
+ */
   color: var(--main-fg-color);
   font-size: 18px;
   font-style: normal;
@@ -597,25 +623,21 @@ About-page
 }
 
 .text-box-bottom {
+  border: 1px solid white;
   margin-right: 60px;
+  margin-top: 35px;
   line-height: 30px;
+  flex-basis: 400px;
+  flex-shrink: 2;
 }
 
 @media screen and (max-width: 666px) {
-  .maincontainer_about_bottom {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
   .text-box-bottom {
+    border: 1px solid white;
     margin-left: 50px;
-    margin-top: 20px;
-  }
-  .text-box-top {
-    margin-left: 50px;
-    margin-top: 40px;
   }
 }
+
 /* ---------------------------------------------------
 Contact-page
 https://www.youtube.com/watch?v=GMH3rNTN4IQ
@@ -739,4 +761,16 @@ form .submit:hover {
   100% {
     opacity: 2;
   }
+}
+
+.error {
+  color: red;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
 }
