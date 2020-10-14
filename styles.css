@@ -300,7 +300,6 @@ h4 a {
 
 @media screen and (max-width: 666px) {
   h4 a {
-    /* margin: 40px 0 0 40px; */
     font-size: 2rem;
   }
 }
@@ -341,9 +340,6 @@ footer {
   }
 }
 
-/* footer p {
-  color: yellow;
-} */
 /* -------------------------------------------------------------
 S U B P A G E S
 ---------------------------------------------------------------*/
@@ -417,8 +413,6 @@ About-page
 ------------------------------------------------ */
 
 .maincontainer_about_top {
-  /*   border: 1px solid white;
- */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -435,8 +429,6 @@ About-page
 }
 
 .maincontainer_about_top h4 {
-  /*   border: 1px solid white;
- */
   color: var(--main-fg-color);
   font-size: 18px;
   font-style: normal;
@@ -449,8 +441,6 @@ About-page
 }
 
 .text-box-top {
-  border: 1px solid white;
-
   margin-left: 60px;
   margin-right: 40px;
   margin-top: 40px;
@@ -583,8 +573,6 @@ About-page
 }
 
 .maincontainer_about_bottom {
-  /*   border: 1px solid white;
- */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -599,8 +587,6 @@ About-page
 }
 
 .maincontainer_about_bottom p {
-  /*   border: 1px solid white;
- */
   color: var(--main-fg-color);
   font-size: 16px;
   font-style: normal;
@@ -610,8 +596,6 @@ About-page
 }
 
 .maincontainer_about_bottom h4 {
-  /*   border: 1px solid white;
- */
   color: var(--main-fg-color);
   font-size: 18px;
   font-style: normal;
@@ -623,7 +607,6 @@ About-page
 }
 
 .text-box-bottom {
-  border: 1px solid white;
   margin-right: 60px;
   margin-top: 35px;
   line-height: 30px;
