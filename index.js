@@ -1,5 +1,5 @@
 /* Contact-form-validation.
-Fadil hjälpte mig med denna. Vi satt i 4 timmar fram till kl01 sewn fick vi (han) det att funka. Lörorik session. Vilken hjälte han är. Jag är skyldig honom en lunch, minst.*/
+Fadil hjälpte mig med denna. Vi satt i 4 timmar fram till kl01 sen fick vi (han) det att funka. Lörorik session. Vilken hjälte han är. Jag är skyldig honom en lunch, minst.*/
 
 const myForm = document.querySelector("form");
 const submitBtn = document.querySelector(".submit");

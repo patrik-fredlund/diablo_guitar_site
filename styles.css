@@ -7,7 +7,7 @@ soretera alla värderna i alfabetisk ordning i elementen. Nu nät jag validerade
 fick jag den varningen. Bra tips.
 
 Sen får jag även varningar på dom ställen jag använt mig av css-variabler.
-Vad jag förstått så hänger inte validatorn med helt enkelt, så det är inget att bry sig om.
+Vad jag förstått så hänger inte validatorn med helt enkelt, så det var inget att bry sig om.
 Hoppas jag har rätt där. Här är länken till det svaret:
 https://stackoverflow.com/questions/57661659/w3c-css-validation-parse-error-on-variables  */
 
@@ -71,7 +71,7 @@ li a {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 15px 5px 15px;
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ li a:hover {
   background-color: rgb(240, 189, 102);
   border-radius: 3px;
   color: rgb(36, 34, 34);
-  padding: 5px 20px 5px 20px;
+  padding: 5px 15px 5px 15px;
   transition: all 1s;
 }
 
@@ -107,7 +107,7 @@ h1 a:hover {
 
 /*-------------------------------------------------------------------------
 Horizontal ruler.
-Hittade en som passde, men den var åt fel håll, så jag stylade om den så att "hornen" pekade uppåt. Utgick från denna, nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB 
+Hittade en som passde men den var åt fel håll, så jag stylade om den så att "hornen" pekade uppåt. Utgick från denna, nr:18 https://codepen.io/ibrahimjabbari/pen/ozinB 
 ------------------------------------------------------------------------*/
 
 hr.style {
