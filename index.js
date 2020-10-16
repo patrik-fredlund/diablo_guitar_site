@@ -1,5 +1,5 @@
 /* Contact-form-validation.
-Fadil hjälpte mig med denna. Vi satt i 4 timmar fram till kl01 sen fick vi (han) det att funka. Lörorik session. Vilken hjälte han är. Jag är skyldig honom en lunch, minst.*/
+Fadil hjälpte mig med denna. Vi satt i 4 timmar fram till kl01 sen fick vi ( han) det att funka. Mycket lörorik session. Vilken hjälte han är. Jag är skyldig honom en lunch, minst.*/
 
 const myForm = document.querySelector("form");
 const submitBtn = document.querySelector(".submit");
@@ -25,7 +25,7 @@ function validation() {
 
     if (!emailInputEl.value.match(mailformat)) {
       errorEl.classList.remove("hide");
-      errorEl.innerHTML += "Email adress is wrong<br>";
+      errorEl.innerHTML += "Email address is wrong<br>";
     }
 
     if (!msglInputEl.value) {
@@ -36,7 +36,7 @@ function validation() {
     if (errorEl.innerHTML == "") {
       errorEl.classList.add("hide");
     }
-    // Message sent kod snutt med en delay
+    // Medleandet skickat, med delay
     if (errorEl.innerHTML == "") {
       msgSentEl.classList.remove("hide");
       msgSentEl.innerHTML = "Thank You.";

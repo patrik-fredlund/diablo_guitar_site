@@ -2,14 +2,17 @@
 
 
 
-Något jag ska gör på mitt nästa projekt är att 
-soretera alla värderna i alfabetisk ordning i elementen. Nu nät jag validerade så
-fick jag den varningen. Bra tips.
+L Ä N K A R
+---------------------------------------------------------
+Till repot:
+https://github.com/patrik-fredlund/diablo_guitar_site.git
 
-Sen får jag även varningar på dom ställen jag använt mig av css-variabler.
-Vad jag förstått så hänger inte validatorn med helt enkelt, så det var inget att bry sig om.
-Hoppas jag har rätt där. Här är länken till det svaret:
-https://stackoverflow.com/questions/57661659/w3c-css-validation-parse-error-on-variables  */
+Och en länk till sidan på github pages:
+ https://patrik-fredlund.github.io/diablo_guitar_site/
+
+
+
+
 
 /* -------------------------------------------------
 Global Styles 
@@ -171,7 +174,7 @@ hr.style {
 
 /*
 Ville ha jagged edges på img och border. #django
-Hittade en bra länk här: https://stackoverflow.com/a/47085434*/
+Hittade en bra länk här: https://stackoverflow.com/a/47085434 */
 
 #django {
   width: 200px;
@@ -301,7 +304,7 @@ Hittade en bra länk här: https://stackoverflow.com/a/47085434*/
   }
 }
 
-/* Välkommen */
+/* Välkommen - länk till about-sidan */
 /* Rotera text: https://www.w3schools.com/cssref/css3_pr_transform.asp */
 
 h4 a {
@@ -424,7 +427,6 @@ Guitars - page
   margin: 20px;
   width: 270px;
   margin-top: 20px;
-  font-weight: 300px;
   font-style: italic;
   line-height: 25px;
 }
@@ -645,7 +647,7 @@ About-page
 Contact-page
 https://www.youtube.com/watch?v=GMH3rNTN4IQ
 
-Sen efter vi snackade om transition så hittade jag denna länk som tog mig i rätt riktining: https://www.codegrepper.com/code-examples/php/keyframes+opacity+css
+Efter att  vi snackade om transition så hittade jag denna länk som tog mig i rätt riktining: https://www.codegrepper.com/code-examples/php/keyframes+opacity+css
 
 Även denna, men den var infinite, dvs den upprepade sig i all oändlighet.
 https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes
