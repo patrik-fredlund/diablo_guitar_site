@@ -20,7 +20,7 @@ function validation() {
       errorEl.innerHTML += "Too Short Name<br>";
     } else if (nameInputEl.value.length > 8) {
       errorEl.classList.remove("hide");
-      errorEl.innerHTML += "Too Long name<br>";
+      errorEl.innerHTML += "Too Long Name<br>";
     }
 
     if (!emailInputEl.value.match(mailformat)) {
@@ -30,7 +30,7 @@ function validation() {
 
     if (!msglInputEl.value) {
       errorEl.classList.remove("hide");
-      errorEl.innerHTML += "No message<br>";
+      errorEl.innerHTML += "Please Write Message<br>";
     }
 
     if (errorEl.innerHTML == "") {
