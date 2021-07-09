@@ -1,6 +1,6 @@
 # diablo_guitar_site
 
-:books: A School Project. My First Site Ever.
+:books: A School Project. My First Site Ever!
 
 A site for the fabricated guitar brand **"El Diablo Guitarras"** 
 
